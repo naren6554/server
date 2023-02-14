@@ -5,6 +5,6 @@ import cors from 'cors';
 
 const app = express();
 app.use(cors());
-app.use('/',Routes);
+app.use('',Routes);
 Connection();
 app.listen(8000,()=> console.log("server is running"));

@@ -9,7 +9,7 @@ export const Connection= async () =>
 try{  
 
 
-     await mongoose.connect(URL,{useUnifiedTopology:true, useNewUrlParser:true});
+     await mongoose.connect(URL, {useUnifiedTopology:true, useNewUrlParser:true});
     console.log("DB CON SUCCESSFUL");
 }
 catch(error){
@@ -19,3 +19,5 @@ console.log("db error",error);
 }
 
 }
+
+export default Connection;
